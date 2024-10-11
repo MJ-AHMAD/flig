@@ -8,46 +8,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
 <!-- CSS Libraries -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <link href="https://crestwavebd.github.io/mj/ecom/lib/slick/slick.css" rel="stylesheet">
 <link href="https://crestwavebd.github.io/mj/ecom/lib/slick/slick-theme.css" rel="stylesheet">
-
 <!-- Template Stylesheet -->
-<link href="https://crestwavebd.github.io/mj/ecom/css/style.css" rel="stylesheet"><script src="https://kit.fontawesome.com/0a9fc1dfce.js" crossorigin="anonymous">
-</script>
-<link rel="stylesheet" href="home.css"><link rel="stylesheet" href="search.css"><link rel="stylesheet" href="transition.css">
-<style>
-/* মোবাইল ডিভাইসের জন্য */@media only screen and (max-width: 600px) {body {font-size: 14px;}.container {width: 100%;padding: 10px;}}
-/* ট্যাবলেট ডিভাইসের জন্য */@media only screen and (min-width: 601px) and (max-width: 768px) {body {font-size: 16px;}.container {width: 90%;padding: 20px;}}
-/* ডেস্কটপ ডিভাইসের জন্য */@media only screen and (min-width: 769px) {body {font-size: 18px;}.container {width: 80%;padding: 30px;}}.container {display: flex;flex-wrap: wrap;}.item {flex: 1 1 100%;}@media only screen and (min-width: 600px) {.item {flex: 1 1 48%;}}img {max-width: 100%;height: auto;}.plane-image {animation: slide-to-down 1.5s;}.logo-bg {animation: slide-to-up 1.5s;}a,.navbar-list {animation: slide-left 0.8s;}li {animation: slide-down 0.8s;}h1 {animation: slide-left 1s;}h3 {animation: slide-left 1.5s;}p {animation: slide-left 2s;}.btn-help {animation: slide-left 3s;}@keyframes slide-to-down {from {opacity: 0.2;transform: translateX(120px);transform: translateY(10px);}to {opacity: 1;transform: translateX(0px);}}@keyframes slide-to-up {from {opacity: 0.2;transform: translateY(-20px);}to {opacity: 1;transform: translateX(0px);}}@keyframes slide-left {from {opacity: 0;transform: translateX(-15px);}to {opacity: 1;transform: translateX(0);}}@keyframes slide-down {from {opacity: 0;transform: translateY(7px);}to {opacity: 1;transform: translateY(0);}}
-</style>
-</head>
-<body>
-<div class="container">
-<div class="search-area">
-<div class="trip">
-<h1 id="h1">One Way - Trip</h1>
-<h1 id="h2">Round - Trip</h1>
-</div>
-<div class="source-box">
-<i class="fa-solid fa-location-dot"></i><input type="text" id="source-feild" placeholder="Enter Departure City">
-</div>
-<div class="source-box">
-<i class="fa-solid fa-location-dot"></i><input type="text" id="destination-feild" placeholder="Enter Arrival City">
-</div>
-<div class="departure-return"><div id="departure">
-<div class="source-box" id="dep">
-<input type="date" id="departure-date" placeholder="Select Departure Date"></div></div>
-<div id="return">
-<div class="source-box" id="return"><input type="date" id="return-date" placeholder="Select Return Date"></div></div></div><div class="source-box" id="passengers"><i class="fa-solid fa-person"></i><input type="number" id="passenger-count" placeholder="Enter Passengers count"></div>
-<div class="submit"><div class="promo-code"><i class="fa-solid fa-tags"></i><input type="text" id="promo" placeholder="Promo code">
-</div>
-<a id="search-submit" href="destination.html" target="_blank">SEARCH</a></div></div></div>
-<footer class="footer-home"><h3 id="footerlogo"><b>SkyNET</b></h3><ul class="footer-list"><li>Book Now</li><li>Special offers</li><li>Destinations</li><li>Customer Support</li><li>About Us</li></ul><div class="footer-div"><p>© 2023 SkyNET. All rights reserved.</p><p style="text-decoration: underline;">Privacy Policy</p></div></footer><script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script><script>$(document).ready(function () {$("#search-submit").click(function () {alert('You are about to be redirected to a new page');});$("#h1").click(function () {$("#return").remove();});$(".source-box").click(function () {$(this).css("border", "3px solid rgb(0, 170, 255)");});$(".source-box").dblclick(function () {$(this).css("border", "2px solid rgb(0, 170, 255)");});});
+<link href="https://crestwavebd.github.io/mj/ecom/css/style.css" rel="stylesheet"><script src="https://kit.fontawesome.com/0a9fc1dfce.js" crossorigin="anonymous"></script><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="search.css"><link rel="stylesheet" href="transition.css"><style>/* মোবাইল ডিভাইসের জন্য */@media only screen and (max-width: 600px) {body {font-size: 14px;}.container {width: 100%;padding: 10px;}.search-area {flex-direction: column;}.source-box {width: 100%;margin-bottom: 10px;}.departure-return {flex-direction: column;}.departure-return .source-box {width: 100%;margin-bottom: 10px;}}/* ট্যাবলেট ডিভাইসের জন্য */@media only screen and (min-width: 601px) and (max-width: 768px) {body {font-size: 16px;}.container {width: 90%;padding: 20px;}}/* ডেস্কটপ ডিভাইসের জন্য */@media only screen and (min-width: 769px) {body {font-size: 18px;}.container {width: 80%;padding: 30px;}}.container {display: flex;flex-wrap: wrap;}.item {flex: 1 1 100%;}@media only screen and (min-width: 600px) {.item {flex: 1 1 48%;}}img {max-width: 100%;height: auto;}.plane-image {animation: slide-to-down 1.5s;}.logo-bg {animation: slide-to-up 1.5s;}a,.navbar-list {animation: slide-left 0.8s;}li {animation: slide-down 0.8s;}h1 {animation: slide-left 1s;}h3 {animation: slide-left 1.5s;}p {animation: slide-left 2s;}.btn-help {animation: slide-left 3s;}@keyframes slide-to-down {from {opacity: 0.2;transform: translateX(120px);transform: translateY(10px);}to {opacity: 1;transform: translateX(0px);}}@keyframes slide-to-up {from {opacity: 0.2;transform: translateY(-20px);}to {opacity: 1;transform: translateX(0px);}}@keyframes slide-left {from {opacity: 0;transform: translateX(-15px);}to {opacity: 1;transform: translateX(0);}}@keyframes slide-down {from {opacity: 0;transform: translateY(7px);}to {opacity: 1;transform: translateY(0);}}</style></head><body><div class="container"><div class="search-area"><div class="trip"><h1 id="h1">One Way - Trip</h1><h1 id="h2">Round - Trip</h1></div><div class="source-box"><i class="fa-solid fa-location-dot"></i><input type="text" id="source-feild" placeholder="Enter Departure City"></div><div class="source-box"><i class="fa-solid fa-location-dot"></i><input type="text" id="destination-feild" placeholder="Enter Arrival City"></div><div class="departure-return"><div id="departure"><div class="source-box" id="dep"><input type="date" id="departure-date" placeholder="Select Departure Date"></div></div><div id="return"><div class="source-box" id="return"><input type="date" id="return-date" placeholder="Select Return Date"></div></div></div><div class="source-box" id="passengers"><i class="fa-solid fa-person"></i><input type="number" id="passenger-count" placeholder="Enter Passengers count"></div><div class="submit"><div class="promo-code"><i class="fa-solid fa-tags"></i><input type="text" id="promo" placeholder="Promo code"></div><a id="search-submit" href="destination.html" target="_blank">SEARCH</a></div></div></div><footer class="footer-home"><h3 id="footerlogo"><b>SkyNET</b></h3><ul class="footer-list"><li>Book Now</li><li>Special offers</li><li>Destinations</li><li>Customer Support</li><li>About Us</li></ul><div class="footer-div"><p>© 2023 SkyNET. All rights reserved.</p><p style="text-decoration: underline;">Privacy Policy</p></div></footer><script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script><script>$(document).ready(function () {$("#search-submit").click(function () {alert('You are about to be redirected to a new page');});$("#h1").click(function () {$("#return").remove();});$(".source-box").click(function () {$(this).css("border", "3px solid rgb(0, 170, 255)");});$(".source-box").dblclick(function () {$(this).css("border", "2px solid rgb(0, 170, 255)");});});
 </script>
 </body>
 </html>
